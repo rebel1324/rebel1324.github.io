@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Staatliches&display=swap');
+@import url('./fontello.css');
+
+body {    
+    background-color: #24252A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+header div.logo {
+    color: #fafafa;
+    cursor: pointer;
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15%;
+    background-color: #202122;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header li a {
+    transition: all 0.12s ease 0s;
+}
+
+header li a:hover {
+    color: #3498db;
+}
+
+content {
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+}
+
+content .section {
+    display: flex;
+    height: 256px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+content .section.top .wrapper {
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
+}
+
+content .section.top h1 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+content .section.top {
+    height: 480px;
+}
+
+content .section.top p {
+    letter-spacing: 0.15rem;
+    font-size: 1.2rem;
+}
+
+.bg-image.top {
+    height: 480px;
+    background: #333 url('../pic/kek.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+content .section.bio {
+    height: 320px;
+}
+
+content .section.bio .wrapper {
+    padding: 15px 15%;
+    width: 100%;
+    text-align: left;
+}
+
+content .section.bio ul {
+    list-style: none;
+}
+
+content .section.bio li {
+    margin: 0.35rem 0;
+    letter-spacing: 0.09rem;
+}
+
+.bg-image.bio {
+    height: 320px;
+    background: #333 url('../pic/keyboard.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+content .section.work {
+    height: 320px;
+}
+
+content .section.work .wrapper {
+    padding: 15px 15%;
+    width: 100%;
+    text-align: right;
+    padding-left: 30%;
+    letter-spacing: 0.05rem;
+}
+
+content .section.work p {
+    line-height: 1.5rem;
+}
+
+
+content .section.media {
+    height: fit-content;
+    height: max-content;
+}
+
+content .section.media .wrapper {
+    padding: 15px 15%;
+    width: 100%;
+    height: 100%;
+}
+
+content .section.media .item {
+    display: flex;
+    align-items: center;
+}
+content .section.media .item .pic{
+    padding: 1rem;
+    padding-right: 4rem;
+}
+content .section.media .item .info{
+    text-align: left;
+}
+content .section.media .item .name{
+    margin-bottom: 0.5rem;
+}
+content .section.media .item .info h1{
+    margin: 0;
+}
+content .section.media .item .info h5{
+    margin: 0;
+}
+content .section.media .item .info p{
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    border: 1.5px solid #fafafa;
+    color: #fafafa;
+    padding: 0.4rem 0.8rem;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: fit-content;
+    margin-right: 0.25rem;
+    display: inline-block;
+    transition: all 0.12s ease 0s;
+}
+
+.button a {
+    transition: all 0.12s ease 0s;
+}
+
+.button:hover {
+    border: 1.5px solid #3498db;
+    color: #3498db;
+}
+
+
+.button:hover a {
+    color: #3498db;
+}
+
+
+footer .wrapper {
+    padding: 15px 15%;
+    text-align: center;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    color: #fafafa;
+    font-size: 0.8rem;
+    height: 128px;
+    background-color: #202122;
+}
+
+footer .footer {
+    display: flex;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+content .section.contact {
+    height: 300px;
+}
+
+content .section.contact .wrapper {
+    text-align: center
+}
+
+.contacts {
+    display: inline-block;
+    width: 300px;
+    margin-top: 3rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts .contact {
+    transition: all .1s ease-in-out;
+}
+.contacts .contact:hover {
+    transform: scale(1.2);
+}
